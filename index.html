@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./dist/css/main.css">
+
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+
+</head>
+
+<body>
+  <main>
+    <header class="header">
+      <div class="header__title title">
+        <h1 class="title__heading">Social Media Dashboard</h1>
+        <p class="title__total">Total Followers: 23,004</p>
+      </div>
+      <div class="header__toggle toggle">
+        Dark Mode
+        <label class="toggle__label" for="toggle">
+          <input class="toggle__input" type="checkbox" id="toggle">
+          <span class="toggle__slider"></span>
+        </label>
+      </div>
+    </header>
+
+    <div class="flex-container">
+
+      <div class="platform platform-facebook">
+        <div class="platform__name name"><i class="name__icon"><img class="name__image" src="./images/icon-facebook.svg"
+              alt="facebook icon"></i>
+          <p class="name__user">@nathanf</p>
+        </div>
+        <p class="platform__followersAmount">1987</p>
+        <p class="platform__followersText">Followers</p>
+        <p class="platform__change change change-up"><img class="change__image" src="./images/icon-up.svg"
+            alt="up arrow">12 Today</p>
+      </div>
+
+      <div class="platform platform-twitter">
+        <div class="platform__name name"><i class="name__icon"><img class="name__image" src="./images/icon-twitter.svg"
+              alt="twitter icon"></i>
+          <p class="name__user">@nathanf</p>
+        </div>
+        <p class="platform__followersAmount">1044</p>
+        <p class="platform__followersText">Followers</p>
+        <p class="platform__change change change-up"><img class="change__image" src="./images/icon-up.svg"
+            alt="up arrow">99 Today</p>
+      </div>
+
+      <div class="platform platform-instagram">
+        <div class="platform__name name"><i class="name__icon"><img class="name__image"
+              src="./images/icon-instagram.svg" alt="instagram icon"></i>
+          <p class="name__user">@realnathanf</p>
+        </div>
+        <p class="platform__followersAmount">11k</p>
+        <p class="platform__followersText">Followers</p>
+        <p class="platform__change change change-up"><img class="change__image" src="./images/icon-up.svg"
+            alt="up arrow">1099
+          Today</p>
+      </div>
+
+      <div class="platform platform-youtube">
+        <div class="platform__name name"><i class="name__icon"><img class="name__image" src="./images/icon-youtube.svg"
+              alt="youtube icon"></i>
+          <p class="name__user">Nathan F.</p>
+        </div>
+        <p class="platform__followersAmount">8239</p>
+        <p class="platform__followersText">Subscribers</p>
+        <p class="platform__change change change-down"><img class="change__image" src="./images/icon-down.svg"
+            alt="down arrow">144
+          Today</p>
+      </div>
+    </div>
+
+    <h2>Overview - Today</h2>
+
+    <div class="secondFlex-container">
+
+      <div class="influence">
+        <div class="influence__stats stats">
+          <p class="stats__type">Page Views</p>
+          <p class="stats__amount">87</p>
+        </div>
+        <div class="influence__info"><i class="info__icon"><img class="info__image" src="./images/icon-facebook.svg"
+              alt="facebook icon"></i>
+          <p class="info__change change-up"><img class="info__arrow" src="./images/icon-up.svg" alt="up arrow">3%</p>
+        </div>
+      </div>
+
+      <div class="influence">
+        <div class="influence__stats stats">
+          <p class="stats__type">Likes</p>
+          <p class="stats__amount">52</p>
+        </div>
+        <div class="influence__info"><i class="info__icon"><img class="info__image" src="./images/icon-facebook.svg"
+              alt="facebook icon"></i>
+          <p class="info__change change-down"><img class="info__arrow" src="./images/icon-down.svg" alt="down arrow">2%
+          </p>
+        </div>
+      </div>
+
+      <div class="influence">
+        <div class="influence__stats stats">
+          <p class="stats__type">Likes</p>
+          <p class="stats__amount">5462</p>
+        </div>
+        <div class="influence__info"><i class="info__icon"><img class="info__image" src="./images/icon-twitter.svg"
+              alt="twitter icon"></i>
+          <p class="info__change change-up"><img class="info__arrow" src="./images/icon-up.svg" alt="up arrow">2257%</p>
+        </div>
+      </div>
+
+      <div class="influence">
+        <div class="influence__stats stats">
+          <p class="stats__type">Profile Views</p>
+          <p class="stats__amount">52k</p>
+        </div>
+        <div class="influence__info"><i class="info__icon"><img class="info__image" src="./images/icon-twitter.svg"
+              alt="twitter icon"></i>
+          <p class="info__change change-up"><img class="info__arrow" src="./images/icon-up.svg" alt="up arrow">1375%</p>
+        </div>
+      </div>
+
+      <div class="influence">
+        <div class="influence__stats stats">
+          <p class="stats__type">Retweets</p>
+          <p class="stats__amount">117</p>
+        </div>
+        <div class="influence__info"><i class="info__icon"><img class="info__image" src="./images/icon-instagram.svg"
+              alt="instagram icon"></i>
+          <p class="info__change change-up"><img class="info__arrow" src="./images/icon-up.svg" alt="up arrow">303%</p>
+        </div>
+      </div>
+
+      <div class="influence">
+        <div class="influence__stats stats">
+          <p class="stats__type">Likes</p>
+          <p class="stats__amount">507</p>
+        </div>
+        <div class="influence__info"><i class="info__icon"><img class="info__image" src="./images/icon-instagram.svg"
+              alt="instagram icon"></i>
+          <p class="info__change change-up"><img class="info__arrow" src="./images/icon-up.svg" alt="up arrow">553%</p>
+        </div>
+      </div>
+
+      <div class="influence">
+        <div class="influence__stats stats">
+          <p class="stats__type">Likes</p>
+          <p class="stats__amount">107</p>
+        </div>
+        <div class="influence__info"><i class="info__icon"><img class="info__image" src="./images/icon-youtube.svg"
+              alt="youtube icon"></i>
+          <p class="info__change change-down"><img class="info__arrow" src="./images/icon-down.svg" alt="down arrow">19%
+          </p>
+        </div>
+      </div>
+
+      <div class="influence">
+        <div class="influence__stats stats">
+          <p class="stats__type">Total Views</p>
+          <p class="stats__amount">1407</p>
+        </div>
+        <div class="influence__info"><i class="info__icon"><img class="info__image" src="./images/icon-youtube.svg"
+              alt="youtube icon"></i>
+          <p class="info__change change-down"><img class="info__arrow" src="./images/icon-down.svg" alt="down arrow">12%
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+  </main>
+  <script src="./index.js"></script>
+</body>
+
+</html>

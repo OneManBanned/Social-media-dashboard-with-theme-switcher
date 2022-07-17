@@ -1,0 +1,48 @@
+.influence {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.25rem;
+    border-radius: .35rem;
+    padding: 2rem;
+    height: 9.25rem;
+    position: relative;
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    &__stats {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+}
+
+.stats__type {
+    font-weight: weight(bold);
+}
+
+.stats__amount {
+    font-weight: weight(bold);
+    font-size: 2.5rem;
+    position: absolute;
+    bottom: 1.5rem;
+    left: 1.85rem;
+}
+
+.info__change {
+    display: flex;
+    align-items: center;
+}
+
+.info__arrow {
+    padding-right: .25rem;
+}
+
+.secondFlex-container {
+    margin-top: 1.5rem;
+}

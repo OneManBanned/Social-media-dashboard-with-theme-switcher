@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+}
+
+$lime-Green: hsl(163, 72%, 41%);
+$bright-Red: hsl(356, 69%, 56%);
+
+$facebook: hsl(208, 92%, 53%);
+$twitter: hsl(203, 89%, 53%);
+$instagram: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+$youTube: hsl(348, 97%, 39%);
+
+$toggle: hsl(230, 22%, 74%);
+
+// DARK-MODE-COLORS
+
+$dark-bg: hsl(230, 17%, 14%);
+$top-bg-pattern-dark: hsl(232, 19%, 15%);
+$card-bg-dark: hsl(228, 28%, 20%);
+$blue-dark-text: hsl(228, 34%, 66%);
+$dark-text: hsl(0, 0%, 100%);
+
+// LIGHT-MODE-COLORS
+
+$light-bg: hsl(0, 0%, 100%);
+$top-bg-pattern-light: hsl(225, 100%, 98%);
+$card-bg-light: hsl(227, 47%, 96%);
+$gray-light-text: hsl(228, 12%, 44%);
+$light-text: hsl(230, 17%, 14%);
+
+// FONT WEIGHTS
+
+$font-weight: (
+    medium: 400,
+    bold: 700
+);
+
+@function weight($weight-name) {
+    @return map-get($font-weight, $weight-name);
+}
+
+@mixin desktop {
+    @media (min-width: 376px) {
+        @content;
+    }
+}
+
+@mixin light-mode {
+
+
+    background-color: $light-bg;
+
+
+    @media (min-width: 376px) {
+        background-image: linear-gradient(hsl(228, 34%, 98%)30%, hsl(0, 0%, 100%) 30% 100%);
+    }
+
+
+    .title__heading {
+        color: $light-text;
+    }
+
+    .title__total {
+        color: $gray-light-text;
+        border-color: $gray-light-text;
+    }
+
+    .toggle {
+        color: $gray-light-text;
+    }
+
+    .platform {
+        background-color: $card-bg-light;
+        color: $light-text;
+
+        &:hover {
+            background-color: hsl(227, 47%, 93%);
+        }
+
+        &__followersText {
+            color: $gray-light-text;
+        }
+    }
+
+    h2,
+    .stats__type,
+    .name {
+        color: $gray-light-text;
+    }
+
+    .influence {
+        background-color: $card-bg-light;
+        color: $light-text;
+
+        &:hover {
+            background-color: hsl(227, 47%, 93%);
+        }
+    }
+
+
+
+    .stats__amount {
+        color: $light-text;
+    }
+
+}
+
+@mixin dark-mode {
+
+    background-color: $dark-bg;
+
+    .title__heading {
+        color: $dark-text;
+    }
+
+    .title__total {
+        color: $blue-dark-text;
+        border-color: $blue-dark-text;
+    }
+
+    .toggle {
+        color: $blue-dark-text;
+    }
+
+    .platform {
+        background-color: $card-bg-dark;
+        color: $dark-text;
+
+        &:hover {
+            background-color: hsl(228, 28%, 25%);
+        }
+
+        &__followersText {
+            color: $blue-dark-text;
+        }
+    }
+
+    .stats__type,
+    .name {
+        color: $blue-dark-text;
+    }
+
+    .influence {
+        background-color: $card-bg-dark;
+
+        &:hover {
+            background-color: hsl(228, 28%, 25%);
+        }
+    }
+
+    .stats__amount,
+    h2 {
+        color: $dark-text;
+    }
+
+}

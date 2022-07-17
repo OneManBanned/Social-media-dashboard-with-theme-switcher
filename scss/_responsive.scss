@@ -1,0 +1,68 @@
+@include desktop {
+
+    body {
+        padding: 0 7rem;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .title__heading {
+        font-size: 2.25rem;
+    }
+
+    .title__total {
+        border: none;
+        font-size: 1.15rem;
+        margin: 0;
+    }
+
+    .toggle {
+        margin: 0;
+        width: 10rem;
+
+
+        &__label:hover {
+            background-image: linear-gradient(90deg, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+            background-color: none;
+        }
+    }
+
+    .flex-container {
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        margin-bottom: 2rem;
+    }
+
+    .platform {
+        max-width: 18.25rem;
+        margin-top: 2rem;
+    }
+
+    h2 {
+        padding: 0;
+        margin: 0;
+    }
+
+    .secondFlex-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 0;
+        margin-top: 1.75rem;
+    }
+
+    .influence {
+        width: 18.25rem;
+        margin-bottom: 1.75rem;
+    }
+
+    .platform:hover,
+    .influence:hover {
+        cursor: pointer;
+    }
+}

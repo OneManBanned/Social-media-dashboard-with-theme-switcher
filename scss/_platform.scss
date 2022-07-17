@@ -1,0 +1,92 @@
+.platform {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.75rem;
+    padding: 1.75rem 0;
+    border-radius: .35rem;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 5px;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+    }
+
+    &-facebook::before {
+        background-color: $facebook;
+    }
+
+    &-twitter::before {
+        background-color: $twitter;
+    }
+
+    &-instagram::before {
+        background-image: $instagram;
+    }
+
+    &-youtube::before {
+        background-color: $youTube;
+    }
+
+
+
+    &__followersAmount {
+        font-size: 4rem;
+        font-weight: weight(bold);
+    }
+
+    &__followersText {
+        text-transform: uppercase;
+        letter-spacing: .45rem;
+        font-size: .825rem;
+        padding-bottom: 1.75rem;
+    }
+
+    &__change {
+        display: inline-flex;
+        align-items: center;
+    }
+
+
+}
+
+.name {
+    display: flex;
+    align-items: center;
+    padding-bottom: 1.25rem;
+
+    &__user {
+        padding-left: .5rem;
+        font-size: .9rem;
+        font-weight: weight(bold);
+    }
+
+}
+
+.change-up {
+    color: $lime-Green;
+    font-size: .9rem;
+    font-weight: weight(bold);
+}
+
+.change-down {
+    color: $bright-Red;
+    font-size: .9rem;
+    font-weight: weight(bold);
+}
+
+.change__image {
+    padding-right: .25rem;
+}
+
+.flex-container {
+    margin-bottom: 3rem;
+}

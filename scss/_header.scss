@@ -1,0 +1,21 @@
+.header {
+    max-width: 100vw;
+}
+
+.title {
+    &__heading {
+        font-size: 1.75rem;
+        font-weight: weight(bold);
+        margin-bottom: .25rem;
+
+    }
+
+    &__total {
+        color: black;
+        font-weight: weight(bold);
+        padding-bottom: 1.5rem;
+        margin-bottom: 1rem;
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+    }
+}
